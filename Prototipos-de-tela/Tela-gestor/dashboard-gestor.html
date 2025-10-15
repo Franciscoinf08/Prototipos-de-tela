@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SAM - Dashboard</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="../Tela-cliente/index.html">
+            <img id="logotipo" src="../logotipo.png" alt="Logotipo SAM">
+        </a>
+        <h1>Empresas</h1>
+        <nav>
+            <a href="../Tela-cliente/index.html">Dashboard</a>
+            <a href="../Tela-clienteGestor/transacoes.html">Transações</a>
+            <a href="empresas.html" class="active">Empresas</a>
+            <a href="../Tela-clienteGestor/notificacoes.html">Notificações</a>
+            <a href="../Tela-clienteGestor/suporte.html">Suporte</a>
+        </nav>
+        <div class="login-menu">
+            <a href="../Tela-clienteGestor/login.html">Login/Cadastrar-se</a>
+        </div>
+        <div class="hamburger-menu">
+            <button id="hamburger-btn">&#9776;</button>
+            <div id="hamburger-dropdown" class="dropdown-content">
+                <a href="../Tela-clienteGestor/perfil.html">Visualizar Perfil</a>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="dashboard">
+        <section id="card-selecao">
+            <label>Cliente:</label>
+            <select>
+                <option>Antônio Carlos</option>
+                <option>João Pedro</option>
+                <option>Paulo José</option>
+            </select>
+        </section>
+        <section class="card">
+            <h2>Saldo Total</h2>
+            <p>128.500 milhas</p>
+        </section>
+        <section class="card">
+            <h2>Últimas Transações</h2>
+            <ul>
+                <li>Compra - 5.000 milhas</li>
+                <li>Venda - 3.000 milhas</li>
+                <li>Bônus - 1.000 milhas</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Alertas</h2>
+            <p>2 programas próximos da expiração.</p>
+        </section>
+    </main>
+    <script src="../script.js"></script>
+</body>
+
+</html>

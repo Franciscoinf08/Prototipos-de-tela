@@ -69,6 +69,13 @@ li {
   width: 280px;
 }
 
+#card-selecao {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
 .formulario {
   background: white;
   padding: 20px;
@@ -148,7 +155,7 @@ table th, table td {
 }
 
 .input-identificacao {
-    background-color: #004b99;
+    background-color: #e4e4e5;
 
     border-radius: 20px;
     padding: 2.5%;
