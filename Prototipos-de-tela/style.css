@@ -27,14 +27,14 @@ header h1 {
   letter-spacing: 1px;
 }
 
-nav a , .login-menu a{
+nav a , .login-menu a {
   color: rgb(0, 0, 0);
   text-decoration: none;
   margin: 0 10px;
   font-weight: 500;
 }
 
-input{
+input {
     width: 100%;
     background-color: #e4e4e5;
     font-size: medium;
