@@ -154,7 +154,7 @@ table th, table td {
     width: 35%;
 }
 
-.input-identificacao {
+.input-identificacao, .dados  {
     background-color: #e4e4e5;
 
     border-radius: 20px;
@@ -231,4 +231,8 @@ table th, table td {
 
 .show {
     display: block;
+}
+
+#edição {
+    opacity: 0%;
 }
