@@ -27,6 +27,12 @@
             <a href="suporte.html">Suporte</a>
         </nav>
         <div class="login-menu"><a href="login.html" class="active">Login/Cadastrar-se</a></div>
+        <div class="hamburger-menu">
+            <button id="hamburger-btn">&#9776;</button>
+            <div id="hamburger-dropdown" class="dropdown-content">
+                <a href="perfil.html">Visualizar Perfil</a>
+            </div>
+        </div>
     </header>
     <main>
         <div id="login">
@@ -70,7 +76,33 @@
     <footer>
         <p id="alterna">Ainda não é cliente? <span id="link-alterna">Cadastre-se</span></p>
     </footer>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
+    <script>
+        const textoLinkEl = document.querySelector("#alterna");
+        const toggleLinkEl = document.querySelector("#link-alterna");
+        const loginEl = document.querySelector("#login");
+        const cadastroEl = document.querySelector("#cadastro");
+
+        toggleLinkEl.addEventListener("click", () => {
+            if (loginEl.classList.contains("campo-inativo")) {
+                // troca para login
+                loginEl.classList.remove("campo-inativo");
+                cadastroEl.classList.add("campo-inativo");
+                textoLinkEl.innerHTML = "Ainda não é cliente? ";
+                toggleLinkEl.innerHTML = "Cadastre-se";
+                textoLinkEl.appendChild(toggleLinkEl);
+            } else {
+                // troca para cadastro
+                loginEl.classList.add("campo-inativo");
+                cadastroEl.classList.remove("campo-inativo");
+                textoLinkEl.innerHTML = "Já é cliente? ";
+                toggleLinkEl.innerHTML = "Entre";
+                textoLinkEl.appendChild(toggleLinkEl);
+            }
+
+        });
+
+    </script>
 </body>
 
 </html>
