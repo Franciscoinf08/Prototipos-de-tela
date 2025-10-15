@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Computar Milhas - SAM 1.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="logotipo" src="logotipo.png"></a>
+        <h1>Computar Milhas</h1>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="transacoes.html">Transações</a>
+            <a href="empresas.html">Empresas</a>
+            <a href="notificacoes.html">Notificações</a>
+            <a href="suporte.html">Suporte</a>
+        </nav>
+        <div class="login-menu"><a href="login.html">Login/Cadastrar-se</a></div>
+    </header>
+
+    <main>
+        <h2>Computar Milhas</h2>
+        <p>Compare valores e descubra se a compra de milhas vale a pena.</p>
+
+        <section class="formulario">
+            <form>
+                <label for="programa">Programa de Fidelidade:</label>
+                <select id="programa">
+                    <option>Latam Pass</option>
+                    <option>Azul Fidelidade</option>
+                    <option>Smiles</option>
+                </select>
+
+                <label for="quantidade">Quantidade de Milhas:</label>
+                <input type="number" id="quantidade" placeholder="Ex: 10.000">
+
+                <label for="valorCompra">Valor Total da Compra (R$):</label>
+                <input type="number" id="valorCompra" placeholder="Ex: 350">
+
+                <label for="valorMilheiro">Valor do Milheiro de Segurança (R$):</label>
+                <input type="number" id="valorMilheiro" placeholder="Ex: 28">
+
+                <button type="button" onclick="calcularVantagem()">Calcular Vantagem</button>
+            </form>
+        </section>
+
+        <section class="card" id="resultado" style="margin-top: 25px;">
+            <h3>Resultado da Análise</h3>
+            <p id="textoResultado">Preencha os campos acima e clique em Calcular.</p>
+        </section>
+    </main>
+</body>
+
+</html>
