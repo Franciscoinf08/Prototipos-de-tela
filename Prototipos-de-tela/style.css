@@ -185,3 +185,45 @@ table th, table td {
 }
 
 /*LOGIN*//*LOGIN*//*LOGIN*//*LOGIN*//*LOGIN*//*LOGIN*//*LOGIN*//*LOGIN*/
+
+.login-menu, .hamburger-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Ajusta botão do hamburger */
+#hamburger-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white; /* ajuste conforme a cor do header */
+}
+
+/* Dropdown alinhado à direita */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px; /* distância do topo do header */
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}

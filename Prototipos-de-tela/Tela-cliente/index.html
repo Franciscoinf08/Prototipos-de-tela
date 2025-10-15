@@ -27,7 +27,14 @@
         <div class="login-menu">
             <a href="login.html">Login/Cadastrar-se</a>
         </div>
+        <div class="hamburger-menu">
+            <button id="hamburger-btn">&#9776;</button>
+            <div id="hamburger-dropdown" class="dropdown-content">
+                <a href="perfil.html">Visualizar Perfil</a>
+            </div>
+        </div>
     </header>
+
 
     <main class="dashboard">
         <section class="card">
@@ -47,6 +54,22 @@
             <p>2 programas próximos da expiração.</p>
         </section>
     </main>
+    <script>
+        const btn = document.getElementById("hamburger-btn");
+        const dropdown = document.getElementById("hamburger-dropdown");
+
+        btn.addEventListener("click", () => {
+            dropdown.classList.toggle("show");
+        });
+
+        window.addEventListener("click", function (event) {
+            if (!event.target.matches('#hamburger-btn')) {
+                if (dropdown.classList.contains('show')) {
+                    dropdown.classList.remove('show');
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
