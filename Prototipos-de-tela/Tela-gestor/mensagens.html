@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mensagens e Avisos</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="../Tela-cliente/index.html"><img id="logotipo" src="../logotipo.png" alt="Logotipo SAM"></a>
+        <h1>Mensagens e Avisos</h1>
+        <nav>
+            <a href="../Tela-cliente/index.html">Dashboard</a>
+            <a href="mensagens.html" class="active">Mensagens</a>
+            <a href="transacoes.html">Transações</a>
+            <a href="notificacoes.html">Notificações</a>
+            <a href="suporte.html">Suporte</a>
+        </nav>
+        <div class="login-menu"><a href="login.html">Login/Cadastrar-se</a></div>
+        <div class="hamburger-menu">
+            <button id="hamburger-btn">&#9776;</button>
+            <div id="hamburger-dropdown" class="dropdown-content">
+                <a href="perfil.html">Visualizar Perfil</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="dashboard">
+        <section class="content" style="flex:1 1 100%;">
+            <h2>Enviar Mensagem</h2>
+            <form class="formulario">
+                <label for="destinatario">Destinatário:</label>
+                <input type="text" id="destinatario" placeholder="Nome do usuário ou cliente">
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" placeholder="Assunto da mensagem">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" rows="4" placeholder="Escreva sua mensagem..."></textarea>
+
+                <button type="button">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
